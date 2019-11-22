@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ADA;
+
+/**
+ *
+ * @author Ravi Chaurasia
+ */
+public class ActiveSPl {
+    void Active(int Start[],int End[],int n){
+        System.out.println("<----------Solve The Problem Of Active Selection by using Java----------->");
+        int j = 0;
+        System.out.println(j + " ");
+        for(int i =1;i<n;i++){
+            if(Start[i]>=End[j]){
+            System.out.print(i + " ");
+            }
+        }
+        System.out.println("\nIndex Value is : ");
+    }
+    public static void main(String[] args){
+        int Start[] = {4, 3, 0, 5, 8, 5};
+        int End[] = {2, 4, 6, 7, 9, 9};
+        int n = Start.length;
+        int n1 = End.length;
+        ActiveSPl as = new ActiveSPl();
+        as.Active(Etart, End, n);
+    }
+}
