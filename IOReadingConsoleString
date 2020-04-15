@@ -1,0 +1,24 @@
+import java.io.*;
+class ReadingConsoleSecond
+{
+ public static void main(String args[]) throws IOException
+ {
+  System.out.println("\n----------------------I/O Readding Console For String ---------------------");
+  BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+  String str[] = new String[200];
+  System.out.println("\nWhen You Enter The 'Stop' You Exit The Console.");
+  System.out.println("Eneter The Character : " );
+  for(int i =0;i<200;i++)
+   {
+    System.out.println("Enter The String : " + i);
+    str[i] = br.readLine();
+    if(str[i].equals("stop"))break;
+   }
+   for(int i =0;i<200;i++)
+   {
+    if(str[i].equals("stop"))break;
+    System.out.println("Yor Read : " + i);
+    System.out.println(str[i]);
+   }
+ }
+}
