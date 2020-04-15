@@ -1,0 +1,18 @@
+import java.io.*;
+class ReadingConsole
+{
+ public static void main(String args[]) throws IOException
+ {
+ System.out.println("\n----------------------I/O Readding Console For Character ---------------------");
+ char ch;
+ BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+ System.out.println("\nWhen You Enter The 'e' You Exit The Console.");
+ System.out.println("Eneter The Character : " );
+ do
+  {
+   ch = (char) br.read();
+   System.out.println(ch);
+  }
+  while(ch!='e');
+ }
+}
